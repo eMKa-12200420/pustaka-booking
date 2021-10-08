@@ -7,7 +7,7 @@
 </head>
 <body>
 <h2>Pemesanan Tiket Cinema 99</h2>
-<form method="post" action="<?php echo base_url(); ?>index.php/cinema/cetak">
+<form method="post" action="<?php echo base_url(); ?>cinema/cetak">
 <table border="0">
     <tr>
     <td>Nama Pemesan</td>
