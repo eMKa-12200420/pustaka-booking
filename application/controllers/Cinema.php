@@ -1,15 +1,16 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Cinema extends CI_Controller {
+class Cinema extends CI_Controller
+{
 
-	public function index()
-	{
-		$this->load->view('view-input-cinema');
-	}
+    public function index()
+    {
+        $this->load->view('view-input-cinema');
+    }
 
-    public function cetak() 
-    { 
+    public function cetak()
+    {
         $jumlah = $this->input->post('jumlah');
         $studio = $this->input->post('studio');
         if ($studio == "Reguler 2D") {
@@ -30,8 +31,8 @@ class Cinema extends CI_Controller {
             'jumlah' => $this->input->post('jumlah'),
             'harga' => $harga,
             'total' => $total
-        ]; 
-        
-        $this->load->view('view-output-cinema', $data); 
+        ];
+
+        $this->load->view('view-output-cinema', $data);
     }
 }
